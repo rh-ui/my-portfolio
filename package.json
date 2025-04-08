@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "homepage": "https://rh-ui.github.io/my-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,12 +8,15 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.6.3",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.487.0",
     "my-portfolio": "file:",
     "react": "^19.0.0",
